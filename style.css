@@ -1,0 +1,557 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.navbar .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar .menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Intro Section Styles */
+.Intro {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  padding: 100px 20px;
+}
+
+.Intro .img {
+  width: 500px;
+  overflow: hidden;
+}
+
+.Intro .profile-img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  height: 534px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.content .heading {
+  margin-bottom: 5px;
+}
+
+.animation {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height: 3.34rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5.62rem;
+  }
+  30% {
+    margin-top: -5.62rem;
+  }
+  40% {
+    margin-top: -11.24rem;
+  }
+  60% {
+    margin-top: -11.24rem;
+  }
+  70% {
+    margin-top: -5.62rem;
+  }
+  80% {
+    margin-top: -5.62rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.content .summery {
+  width: 80%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  animation: fade-in 2s 0.5s normal;
+}
+
+.Intro h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.Intro p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* Section Styles */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.skills-section {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skills-category {
+  width: 100%;
+  max-width: 900px;
+}
+
+.skills-category h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e7e7e7;
+  padding-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 120px;
+  height: 150px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Portfolio Styles */
+.portfolio {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.project img,
+.project video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.project p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.project a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Resume Styles */
+.resume {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+}
+
+.resume-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.resume-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.resume-summary,
+.resume-experience,
+.resume-education {
+  margin-bottom: 20px;
+}
+
+.resume-summary h3,
+.resume-experience h3,
+.resume-education h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resume-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.resume-download {
+  text-align: center;
+}
+
+.resume-download a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.resume-download a:hover {
+  text-decoration: underline;
+}
+
+.resume-image {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.resume-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact Styles */
+.contact {
+  background-color: #fff;
+  padding: 60px 20px;
+  height: 100vh;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-form-container,
+.contact-info {
+  flex: 1;
+  max-width: 600px;
+}
+
+.contact-form-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Small Devices (Phones, 600px and up) */
+@media (max-width: 600px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .menu-toggle {
+    display: flex;
+  }
+
+  .Intro {
+    flex-direction: column;
+    padding: 80px 20px;
+  }
+
+  .Intro .img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar .container {
+    justify-content: space-between;
+  }
+
+  .Intro {
+    flex-direction: row;
+  }
+
+  .Intro .img {
+    width: 50%;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar .container {
+    width: 80%;
+  }
+
+  .Intro {
+    padding: 100px 20px;
+  }
+
+  .Intro .img {
+    width: 50%;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+}
+
+/* Extra Large Devices (Large Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar .container {
+    width: 70%;
+  }
+
+  .Intro {
+    padding: 120px 20px;
+  }
+
+  .Intro .img {
+    width: 40%;
+  }
+
+  .content {
+    width: 60%;
+  }
+}
